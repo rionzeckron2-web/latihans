@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+  </head>
+  <body>
+    <h1 style="font-family: Roboto, sans-serif; text-align: center">
+      Form Pendaftaran
+    </h1>
+    <!-- Informasi Pendaftaran -->
+    <h2 style="font-family: Roboto, sans-serif">Informasi Pendaftaran</h2>
+
+    <form action="pendaftaran_selesai.html" method="post">
+      <label
+        for="Gelombang pendaftaran"
+        style="display: block; margin-bottom: 10px"
+        >Gelombang Pendaftaran</label
+      >
+      <select id="Gelombang pendaftaran" name="Gelombang pendaftaran" required>
+        <option value="">Pilih Gelombang</option>
+        <option value="gelombang1">
+          Gelombang 1 (01 Januari 2026 - 31 Maret 2026)
+        </option>
+        <option value="gelombang2">
+          Gelombang 2 (01 April 2026 - 30 Juni 2026)
+        </option></select
+      ><br /><br />
+
+      <!-- Data Diri -->
+      <h2 style="font-family: Roboto, sans-serif">Data Diri Calon Siswa</h2>
+
+      <!-- Nama -->
+      <label for="nama" style="display: block; margin-bottom: 10px"
+        >Nama Lengkap</label
+      >
+      <input type="text" id="nama" name="nama" required /><br /><br />
+
+      <!-- Tempat & Tanggal Lahir -->
+      <label for="tempat_lahir" style="display: block; margin-bottom: 10px"
+        >Tempat Lahir</label
+      >
+      <input type="text" id="tempat_lahir" name="tempat_lahir" required />
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <input
+        type="date"
+        id="tanggal_lahir"
+        name="tanggal_lahir"
+        required
+      /><br /><br />
+
+      <!-- Jenis Kelamin -->
+      <label for="jenis_kelamin" style="display: block; margin-bottom: 10px"
+        >Jenis Kelamin</label
+      >
+      <input
+        type="radio"
+        id="laki-laki"
+        name="jenis_kelamin"
+        value="laki-laki"
+        required
+      />
+      <label for="laki-laki">Laki-laki</label>
+      <input
+        type="radio"
+        id="perempuan"
+        name="jenis_kelamin"
+        value="perempuan"
+        required
+      />
+      <label for="perempuan">Perempuan</label><br /><br />
+
+      <!-- NIK & NISN -->
+      <label for="nik">NIK</label>
+      <input type="text" id="nik" name="nik" required />
+      <label for="nisn">NISN</label>
+      <input type="text" id="nisn" name="nisn" required /><br /><br />
+
+      <!-- Agama -->
+      <label for="agama" style="display: block; margin-bottom: 10px"
+        >Agama</label
+      >
+      <select id="agama" name="agama" required>
+        <option value="">Pilih Agama</option>
+        <option value="islam">Islam</option>
+        <option value="kristen">Kristen</option>
+        <option value="katolik">Katolik</option>
+        <option value="hindu">Hindu</option>
+        <option value="buddha">Buddha</option></select
+      ><br /><br />
+
+      <!-- Alamat -->
+      <label for="alamat" style="display: block; margin-bottom: 10px"
+        >Alamat</label
+      >
+      <textarea id="alamat" name="alamat" required></textarea><br /><br />
+
+      <!-- RT & RW -->
+      <label for="rt" style="display: block; margin-bottom: 10px">RT</label>
+      <input type="text" id="rt" name="rt" required />
+      <label for="rw">RW</label>
+      <input type="text" id="rw" name="rw" required />
+
+      <!-- Desa/Kelurahan & Kecamatan -->
+      <label for="desakel">Desa/Kelurahan</label>
+      <input type="text" id="desakel" name="desakel" required />
+
+      <label for="kecamatan">Kecamatan</label>
+      <input type="text" id="kecamatan" name="kecamatan" required /><br /><br />
+
+      <!-- Kabupaten/Kota & Provinsi -->
+      <label for="kabupaten/kota" style="display: block; margin-bottom: 10px"
+        >Kabupaten/Kota</label
+      >
+      <input type="text" id="kabupaten/kota" name="kabupaten/kota" required />
+      <label for="provinsi">Provinsi</label>
+      <input type="text" id="provinsi" name="provinsi" required />
+
+      <!-- Kode Pos & Alamat Email -->
+      <label for="kodepos">Kode Pos</label>
+      <input type="text" id="kodepos" name="kodepos" required /><br /><br />
+
+      <label for="alamat email" style="display: block; margin-bottom: 10px"
+        >Alamat Email</label
+      >
+      <input type="email" id="alamat email" name="alamat email" required />
+
+      <!-- Nomor Telepon/No HP -->
+      <label for="nomor telephone/no hp">Nomor Telepon/No HP</label>
+      <input
+        type="text"
+        id="nomor telephone/no hp"
+        name="nomor telephone/no hp"
+        required
+      /><br /><br />
+
+      <!-- Asal Sekolah -->
+      <h2>Asal Sekolah</h2>
+      <label for="asal_sekolah" style="display: block; margin-bottom: 10px"
+        >Asal Sekolah</label
+      >
+      <input type="text" id="asal_sekolah" name="asal_sekolah" required />
+      <label for="NPSN alamat_sekolah">NPSN Alamat Sekolah</label>
+      <input
+        type="text"
+        id="NPSN alamat_sekolah"
+        name="NPSN alamat_sekolah"
+        required
+      /><br /><br />
+      <label for="tahun_lulus">Tahun Lulus</label>
+      <input
+        type="text"
+        id="tahun_lulus"
+        name="tahun_lulus"
+        required
+      /><br /><br />
+
+      <!-- Pilihan Jurusan -->
+      <h2>Pilihan Jurusan</h2>
+      <label for="pilihan_jurusan 1" style="display: block; margin-bottom: 10px"
+        >Pilihan Jurusan</label
+      >
+      <select id="pilihan_jurusan 1" name="pilihan_jurusan" required>
+        <option value="">Pilih Jurusan</option>
+        <option value="jurusan1">Jurusan 1</option>
+        <option value="jurusan2">Jurusan 2</option>
+        <option value="jurusan3">Jurusan 3</option></select
+      ><br /><br />
+
+      <!-- Unggahan Dokumen -->
+      <h2>Unggahan Dokumen</h2>
+      <label for="dokumen" style="display: block; margin-bottom: 10px"
+        >Unggah Dokumen</label
+      >
+      <input type="file" id="dokumen" name="dokumen" required /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
